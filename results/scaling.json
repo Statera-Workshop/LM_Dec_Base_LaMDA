@@ -1,0 +1,65 @@
+{
+ "model": "lamda",
+ "repo": "LM_2022_LaMDA-pytorch",
+ "target_repo": "LM_Dec_Base_LaMDA",
+ "category": "Base",
+ "upstream": "vendored from RichardMinsooGo/LM_2022_LaMDA-pytorch (see LICENSE in vendor folder if present)",
+ "unified": [
+  "T5 relative position bias (upstream)"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "scaling",
+ "started": "2026-11-02 11:36:08",
+ "smoke": false,
+ "rows": [
+  {
+   "len": 512,
+   "train": {
+    "peak_mb": 881.3,
+    "ms": 52.2,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 267.2,
+    "ms": 24.4,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 1024,
+   "train": {
+    "peak_mb": 3179.9,
+    "ms": 185.7,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 954.7,
+    "ms": 87.3,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 2048,
+   "train": {
+    "peak_mb": 12306.7,
+    "ms": 8931.7,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 3697.7,
+    "ms": 330.1,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 4096,
+   "note": "not supported (model built for <= 2048)"
+  },
+  {
+   "len": 8192,
+   "note": "not supported (model built for <= 2048)"
+  }
+ ],
+ "seconds": 34.4
+}
