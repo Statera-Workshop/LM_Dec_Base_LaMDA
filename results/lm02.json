@@ -8,43 +8,197 @@
   "T5 relative position bias (upstream)"
  ],
  "torch": "2.5.1+cu124",
- "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "gpu": "NVIDIA GeForce RTX 4090",
  "stage": "lm02",
- "started": "2026-11-03 05:06:18",
+ "started": "2026-11-24 22:49:45",
  "smoke": false,
  "params": 22387968,
  "micro_batch": null,
- "steps": 2050,
- "tokens": 16793600,
+ "steps": 24415,
+ "tokens": 200007680,
  "budget_tokens": 200000000,
- "capped": true,
+ "capped": false,
  "bf16": true,
- "hours": 6.611,
- "valid_bpc": 1.9461262646905921,
- "test_bpc": 1.9336858516286075,
+ "hours": 1.622,
+ "valid_bpc": 1.477271015537993,
+ "test_bpc": 1.4765212566699404,
  "valid_tokens": 4915200,
  "test_tokens": 4915200,
  "history": [
   {
    "step": 1000,
    "tokens": 8192000,
-   "train_bpc": 2.863779588885062,
-   "valid_bpc": 2.1680261473202385,
-   "hours": 1.8915462876690758
+   "train_bpc": 2.8637595449950344,
+   "valid_bpc": 2.1681096930523744,
+   "hours": 0.06501212232642703
   },
   {
    "step": 2000,
    "tokens": 16384000,
-   "train_bpc": 2.0102833297421805,
-   "valid_bpc": 1.962430570836994,
-   "hours": 3.9120636617475086
+   "train_bpc": 2.010403868598552,
+   "valid_bpc": 1.9626224673590003,
+   "hours": 0.13007132404380375
   },
   {
-   "step": 2050,
-   "tokens": 16793600,
-   "train_bpc": 1.943137526106327,
-   "valid_bpc": 1.95703392723557,
-   "hours": 4.197774022089111
+   "step": 3000,
+   "tokens": 24576000,
+   "train_bpc": 1.8708469828896641,
+   "valid_bpc": 1.860235672937451,
+   "hours": 0.19514934440453846
+  },
+  {
+   "step": 4000,
+   "tokens": 32768000,
+   "train_bpc": 1.7851137638611954,
+   "valid_bpc": 1.806035330199078,
+   "hours": 0.26023210479153525
+  },
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "train_bpc": 1.7220532904604544,
+   "valid_bpc": 1.7636973067825303,
+   "hours": 0.32531776348749797
+  },
+  {
+   "step": 6000,
+   "tokens": 49152000,
+   "train_bpc": 1.6790540572129378,
+   "valid_bpc": 1.7275478761177532,
+   "hours": 0.39040603617827097
+  },
+  {
+   "step": 7000,
+   "tokens": 57344000,
+   "train_bpc": 1.6415861834690753,
+   "valid_bpc": 1.6950634929130601,
+   "hours": 0.4554942172103458
+  },
+  {
+   "step": 8000,
+   "tokens": 65536000,
+   "train_bpc": 1.603868464938868,
+   "valid_bpc": 1.6664751995215337,
+   "hours": 0.5205779323975245
+  },
+  {
+   "step": 9000,
+   "tokens": 73728000,
+   "train_bpc": 1.5715265507002971,
+   "valid_bpc": 1.6428561410272469,
+   "hours": 0.5856593953900867
+  },
+  {
+   "step": 10000,
+   "tokens": 81920000,
+   "train_bpc": 1.545276213284197,
+   "valid_bpc": 1.6171895043870161,
+   "hours": 0.6507330307033327
+  },
+  {
+   "step": 11000,
+   "tokens": 90112000,
+   "train_bpc": 1.5183450894239623,
+   "valid_bpc": 1.603452050483614,
+   "hours": 0.7158131815327539
+  },
+  {
+   "step": 12000,
+   "tokens": 98304000,
+   "train_bpc": 1.4978340090413842,
+   "valid_bpc": 1.5825915756509878,
+   "hours": 0.7808974700503879
+  },
+  {
+   "step": 13000,
+   "tokens": 106496000,
+   "train_bpc": 1.4874801882463726,
+   "valid_bpc": 1.5723746934619862,
+   "hours": 0.8459869862265057
+  },
+  {
+   "step": 14000,
+   "tokens": 114688000,
+   "train_bpc": 1.4720948015699,
+   "valid_bpc": 1.5598056587316684,
+   "hours": 0.9110716234975391
+  },
+  {
+   "step": 15000,
+   "tokens": 122880000,
+   "train_bpc": 1.4542584841165884,
+   "valid_bpc": 1.5497390128472412,
+   "hours": 0.9761578232049942
+  },
+  {
+   "step": 16000,
+   "tokens": 131072000,
+   "train_bpc": 1.4472818774354976,
+   "valid_bpc": 1.5432797374611913,
+   "hours": 1.041247966620657
+  },
+  {
+   "step": 17000,
+   "tokens": 139264000,
+   "train_bpc": 1.4366439351958766,
+   "valid_bpc": 1.5342863389905144,
+   "hours": 1.106335122452842
+  },
+  {
+   "step": 18000,
+   "tokens": 147456000,
+   "train_bpc": 1.4187771940116276,
+   "valid_bpc": 1.526373128293463,
+   "hours": 1.1714217309157053
+  },
+  {
+   "step": 19000,
+   "tokens": 155648000,
+   "train_bpc": 1.4165656922358492,
+   "valid_bpc": 1.520099429067,
+   "hours": 1.2365091458294126
+  },
+  {
+   "step": 20000,
+   "tokens": 163840000,
+   "train_bpc": 1.402388376278522,
+   "valid_bpc": 1.5136780199611037,
+   "hours": 1.3015905457735062
+  },
+  {
+   "step": 21000,
+   "tokens": 172032000,
+   "train_bpc": 1.398891649184742,
+   "valid_bpc": 1.5055263054436627,
+   "hours": 1.3666651992003123
+  },
+  {
+   "step": 22000,
+   "tokens": 180224000,
+   "train_bpc": 1.3896076284972354,
+   "valid_bpc": 1.5002325332648523,
+   "hours": 1.4317407461007436
+  },
+  {
+   "step": 23000,
+   "tokens": 188416000,
+   "train_bpc": 1.382648191016163,
+   "valid_bpc": 1.4972806299247488,
+   "hours": 1.4968179211351607
+  },
+  {
+   "step": 24000,
+   "tokens": 196608000,
+   "train_bpc": 1.3770395999514167,
+   "valid_bpc": 1.4921382033386108,
+   "hours": 1.5619011519352595
+  },
+  {
+   "step": 24415,
+   "tokens": 200007680,
+   "train_bpc": 1.373998053160732,
+   "valid_bpc": 1.4887578301613673,
+   "hours": 1.590472443898519
   }
  ],
  "prime": [
@@ -177,6 +331,6 @@
   110,
   101
  ],
- "sample": " of the [[communism]] and [[computer]] and [[computer]] and [[computer]].  The [[computer computer]] is a [[computer computer]] and [[computer computer]] and [[computer state]] and [[computer]].  The [[computer computer]] and [[computer computer]] and [[co",
- "seconds": 23809.8
+ "sample": " of the most common ancestors of the [[Caribbean]] in the world.  The coffee is the [[coffee]] of the [[coffee]] in the coffee that is completely controlled by the coffee barrier and the coffee barrier is the coffee barrier in the coffee barrier.  The coff",
+ "seconds": 5840.1
 }
